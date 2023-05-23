@@ -168,9 +168,6 @@ def Transformer_model(WINDOW_SIZE):
     return model
 
 
-    # first block:
-
-
 #####################################
 ## Model definition              ##
 ## ResNet based on Rajpurkar    ##

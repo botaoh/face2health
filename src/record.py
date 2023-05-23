@@ -75,7 +75,6 @@ class Session:
         else:
             print("Serial not opened")
     
-    # 虽然我不知道这步具体在干嘛
     def __process_data(self,data):
         z=scipy.signal.savgol_filter(data,11,3)
         data2 = np.asarray(z, dtype=np.float32)
