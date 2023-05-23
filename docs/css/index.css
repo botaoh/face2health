@@ -1,0 +1,43 @@
+body {
+    overflow-x: hidden;
+    /* 隐藏横向滚动条 */
+    overflow-y: hidden;
+    /* 隐藏纵向滚动条 */
+    scroll-behavior: smooth;
+    /* 设置滚动事件平滑处理 */
+    background-color: #443ace;
+}
+
+#charts_container {
+    display: inline-block;
+}
+
+#pie_chart_container {
+    width: 90%;
+    height: 90%;
+    display: flex;
+}
+
+#star_chart_container {
+    width: 90%;
+    height: 90%;
+    display: flex;
+
+}
+
+
+
+#statistic_bar_container {
+    width: 50%;
+    height: 50%;
+    background-color: #3126c8;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* 水平居中 */
+    /* display: flex; */
+    display: inline-block;
+    vertical-align: top;
+}

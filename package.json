@@ -1,0 +1,31 @@
+{
+  "name": "littleheartdoctor",
+  "version": "1.0.0",
+  "description": "Current work",
+  "main": "server/server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "nodemon server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SankHyan24/LittleHeartDoctor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SankHyan24/LittleHeartDoctor/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express.js": "^1.0.0",
+    "knex": "^0.95.6",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7",
+    "pg": "^8.6.0",
+    "vue": "^3.2.40"
+  },
+  "homepage": "https://github.com/SankHyan24/LittleHeartDoctor#readme"
+}

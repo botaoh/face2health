@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Heart Doctor</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/util.css">
+</head>
+
+<body>
+    <h1>Little Heart Doctor</h1>
+    <p>Little Heart Doctor is running.</p>
+    <input type="button" id="start_button" value="Start" />
+
+    <div id="charts_container">
+        <!-- Pie Chart -->
+        <div id="pie_chart_container">
+            <script src="https://unpkg.com/topojson@3"></script>
+            <div id="pie_chart"> </div>
+            <script type="module" src="js/pie_chart.js"></script>
+        </div>
+        <!-- Star Chart -->
+        <div id="star_chart_container">
+            <script src="https://unpkg.com/topojson@3"></script>
+            <div id="star_chart"> </div>
+            <script type="module" src="js/star_chart.js"></script>
+        </div>
+    </div>
+
+    <div id="statistic_bar_container">
+        <!-- Bar Form -->
+        <form id="statistic_bar_form"
+            style="font: 12px var(--sans-serif); display: flex; height: 33px; align-items: center;">
+            <label style="margin-right: 1em; display: inline-flex; align-items: center;">
+                <input type="radio" name="radio" value="stacked" style="margin-right: 0.5em;" checked> Stacked
+            </label>
+            <label style="margin-right: 1em; display: inline-flex; align-items: center;">
+                <input type="radio" name="radio" value="grouped" style="margin-right: 0.5em;"> Grouped
+            </label>
+        </form>
+        <!-- Bar Chart -->
+        <script src="https://unpkg.com/topojson@3"></script>
+        <div id="statistic_bar"> </div>
+        <script type="module" src="js/statistic_bar.js"></script>
+    </div>
+
+
+
+
+    <script src="js/index.js"></script>
+</body>
